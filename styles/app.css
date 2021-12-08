@@ -1,0 +1,6 @@
+@import url("a11yreset.css");
+@import url("utilitary.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
