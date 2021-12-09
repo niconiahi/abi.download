@@ -4,5 +4,10 @@ export type Jsons = {
 }
 export type Abi = {
   id: string
+  type: Type
   methods: Method[]
+}
+export enum Type {
+  Governor = "GOVERNOR",
+  Token = "TOKEN",
 }

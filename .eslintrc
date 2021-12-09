@@ -137,18 +137,6 @@
         "prev": "const",
         "next": "if"
       }
-    ],
-    "no-magic-numbers": [
-      "error", {
-        "ignoreArrayIndexes": true,
-        "detectObjects": true
-      }
     ]
-    // "import/no-unused-modules": [
-    //   "error", 
-    //   {
-    //     "unusedExports": true
-    //   }
-    // ],
   }
 }

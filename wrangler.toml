@@ -1,9 +1,6 @@
-name = "remix-cloudflare-workers"
+name = "abi"
 type = "javascript"
-
-zone_id = ""
-account_id = ""
-route = ""
+account_id = "a27a0f500bc67545f3a8deb2e45e4fa0"
 workers_dev = true
 
 [site]
