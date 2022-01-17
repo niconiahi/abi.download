@@ -1,8 +1,6 @@
-import { Jsons, Method, Abi, Type } from "~/types"
-
-import * as tokens from "../abis/token"
-import * as governors from "../abis/governor"
 import invariant from "tiny-invariant"
+
+import { Method, Abi, Type } from "~/types"
 
 export function jsonToAbi([id, methods]: [string, Method[]]): Abi {
   const isToken = id.toLowerCase().includes("token")
@@ -43,23 +41,4 @@ export function idToSlug(id: string): string {
     .join("-")
 
   return kebab
-}
-
-export function getAbis(jsons: Jsons): Abi[] {
-  return Object.entries(jsons).map(jsonToAbi)
-}
-
-export function getJsons(): Jsons {
-  const tokenJsons = getTokenJsons()
-  const governorJsons = getGovernorJsons()
-
-  return { ...tokenJsons, ...governorJsons }
-}
-
-export function getTokenJsons(): Jsons {
-  return { ...tokens }
-}
-
-export function getGovernorJsons(): Jsons {
-  return { ...governors }
 }
